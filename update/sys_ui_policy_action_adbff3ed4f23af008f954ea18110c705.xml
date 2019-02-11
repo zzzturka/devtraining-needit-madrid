@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
     <sys_ui_policy_action action="INSERT_OR_UPDATE">
         <cleared>false</cleared>
-        <disabled>true</disabled>
-        <field>state</field>
-        <mandatory>ignore</mandatory>
+        <disabled>ignore</disabled>
+        <field>u_other</field>
+        <mandatory>true</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-02-07 05:17:41</sys_created_on>
-        <sys_id>abb027dc4f23eb008f954ea18110c70c</sys_id>
+        <sys_created_on>2019-02-11 04:44:56</sys_created_on>
+        <sys_id>adbff3ed4f23af008f954ea18110c705</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>state</sys_name>
+        <sys_name>u_other</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_ui_policy_action_abb027dc4f23eb008f954ea18110c70c</sys_update_name>
+        <sys_update_name>sys_ui_policy_action_adbff3ed4f23af008f954ea18110c705</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-07 05:17:41</sys_updated_on>
+        <sys_updated_on>2019-02-11 04:44:56</sys_updated_on>
         <table>x_58872_needit_needit</table>
-        <ui_policy display_value="make fields read only on close">0130af9c4f23eb008f954ea18110c75e</ui_policy>
-        <visible>ignore</visible>
+        <ui_policy display_value="NeedIt show or hide &quot;other&quot; field">167fffad4f23af008f954ea18110c7eb</ui_policy>
+        <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

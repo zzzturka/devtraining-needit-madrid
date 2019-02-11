@@ -12,6 +12,7 @@
         <element choice="1" label="Moneeeh" mandatory="true" max_length="40" name="u_moneeeeh_1" type="integer">
             <choice/>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="other" max_length="40" name="u_other" type="string"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for_2" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" mandatory="true" max_length="40" name="u_req_type_1" type="string">
             <choice>
@@ -21,8 +22,12 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Short descripition" max_length="250" name="u_short_descr_1" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_requested_for_2" dependent_on_field="u_requested_for_2" label="What needed" max_length="40" name="u_what_needed" type="string" use_dependent_field="true">
-            <choice/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" max_length="40" name="u_what_needed" type="string" use_dependent_field="true">
+            <choice>
+                <element inactive_on_update="false" label="Legal" sequence="0" value="legal"/>
+                <element inactive_on_update="false" label="IT" sequence="1" value="it"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+            </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_wheneeediit" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="1000" name="u_wrk_nts" type="string"/>
