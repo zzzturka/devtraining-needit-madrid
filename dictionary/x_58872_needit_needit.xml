@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="1" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="4" type="collection">
         <element label="new field 2" max_length="40" name="new_field_2new_field_3" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Moneeeh" mandatory="true" max_length="40" name="u_choice_2" type="string">
             <choice>
@@ -21,15 +21,18 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Short descripition" max_length="250" name="u_short_descr_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_requested_for_2" dependent_on_field="u_requested_for_2" label="What needed" max_length="40" name="u_what_needed" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_wheneeediit" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="1000" name="u_wrk_nts" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="u_wtf_needed" type="string" use_dependent_field="true">
             <choice>
-                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="IT help" sequence="0" value="Choice 1"/>
                 <element inactive="true" inactive_on_update="true" label="Legal consult" sequence="0" value="legal consult"/>
-                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Legal help" sequence="1" value="Choice 2"/>
                 <element inactive="true" inactive_on_update="true" label="OSS help" sequence="1" value="oss help"/>
-                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Misc" sequence="2" value="Choice 3"/>
                 <element inactive="true" inactive_on_update="true" label="MONEEEEH" sequence="2" value="moneeeeh"/>
             </choice>
         </element>
